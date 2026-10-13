@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Energy Savings Calculator | ThermaGuard™</title>
+  <meta name="description" content="Calculate your estimated home heating and cooling savings with ThermaGuard's building-science calculator. Test different R-values, home sizes, and climates.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b6e4f'/><path d='M50 20 L80 45 L70 45 L70 75 L30 75 L30 45 L20 45 Z' fill='%23ffffff'/><circle cx='50' cy='55' r='10' fill='%23f59e0b'/></svg>">
+
+  <!-- Google Fonts (Outfit & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons 1.11 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Core & RTL Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg tg-navbar sticky-top">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon-wrap">
+          <i class="bi bi-shield-shaded"></i>
+        </div>
+        <span>Therma<span class="brand-highlight">Guard</span></span>
+      </a>
+
+      <!-- Mobile Controls & Hamburger -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="control-btn theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button class="rtl-pill-btn rtl-toggle-btn" aria-label="Toggle layout direction">
+            <span class="dir-label">RTL</span>
+        </button>
+        <button class="navbar-toggler border-0 shadow-none px-2" type="button" data-bs-toggle="collapse" data-bs-target="#tgNavbarCollapse" aria-controls="tgNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="tgNavbarCollapse">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown: EXACTLY TWO ITEMS -->
+          <li class="nav-dropdown dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door me-2"></i>Home 1</a></li>
+              <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-building me-2"></i>Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="calculator.html">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Action Controls & CTA -->
+        <div class="nav-actions">
+          <button class="control-btn theme-toggle-btn d-none d-lg-flex" aria-label="Toggle theme" title="Toggle dark/light mode">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="rtl-pill-btn rtl-toggle-btn d-none d-lg-inline-flex" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+            <span class="dir-label">RTL</span>
+          </button>
+          <a href="contact.html" class="btn btn-primary ms-lg-2">
+            <i class="bi bi-clipboard2-check me-1"></i>Get a Free Assessment
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <section class="tg-page-banner tg-banner-calculator">
+    <div class="container tg-page-banner-container">
+      <h1 class="tg-page-banner-title">Energy Savings Calculator</h1>
+      <nav aria-label="breadcrumb" class="tg-page-banner-breadcrumb-nav">
+        <ol class="tg-page-banner-breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="separator">/</li>
+          <li class="active" aria-current="page">Calculator</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+
+  <!-- ================= INTERACTIVE CALCULATOR SECTION ================= -->
+  <section class="section-padding">
+    <div class="container">
+      <!-- Error Alert Box -->
+      <div id="calcErrorAlert" class="alert alert-danger d-none mb-4" role="alert">
+        Please check your input values.
+      </div>
+
+      <div class="calc-wrapper">
+        <div class="row g-5">
+          <!-- Inputs Column -->
+          <div class="col-lg-7">
+            <div class="mb-4">
+              <h3 class="h4 fw-bold mb-0"><i class="bi bi-sliders text-success me-2"></i>Building Parameters</h3>
+            </div>
+
+            <!-- Home Size -->
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <label class="form-label mb-0 fw-semibold" for="calcHomeSize">Home Size (Square Feet)</label>
+                <div class="input-group calc-input-pill" style="width: 130px;">
+                  <input type="number" class="form-control form-control-sm text-end fw-bold calc-num-input" id="calcHomeSize" value="2400" min="400" max="15000" step="50">
+                  <span class="input-group-text small">sq ft</span>
+                </div>
+              </div>
+              <input type="range" class="calc-slider" id="calcHomeSizeRange" min="800" max="6000" step="50" value="2400">
+              <div class="calc-slider-labels">
+                <span>800 sq ft</span>
+                <span>3,400 sq ft</span>
+                <span>6,000+ sq ft</span>
+              </div>
+            </div>
+
+            <!-- Current Annual Energy Cost -->
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <label class="form-label mb-0 fw-semibold" for="calcAnnualBill">Current Total Annual Energy Bill</label>
+                <div class="input-group calc-input-pill" style="width: 145px;">
+                  <span class="input-group-text small">$</span>
+                  <input type="number" class="form-control form-control-sm text-end fw-bold calc-num-input" id="calcAnnualBill" value="3200" min="500" max="35000" step="100">
+                  <span class="input-group-text small">/yr</span>
+                </div>
+              </div>
+              <input type="range" class="calc-slider" id="calcAnnualBillRange" min="1000" max="8000" step="100" value="3200">
+              <div class="calc-slider-labels">
+                <span>$1,000 / yr</span>
+                <span>$4,500 / yr</span>
+                <span>$8,000+ / yr</span>
+              </div>
+            </div>
+
+            <!-- Existing Condition -->
+            <div class="mb-4">
+              <label class="form-label" for="calcExistingCondition">Existing Insulation Condition</label>
+              <select class="form-select" id="calcExistingCondition">
+                <option value="poor">Poor / Uninsulated (Pre-1980 standard, &lt; R-11, severe drafts)</option>
+                <option value="outdated" selected>Outdated / Settled (R-19 fiberglass batts, visible framing)</option>
+                <option value="moderate">Moderate / Average (R-30, unsealed attic penetrations)</option>
+              </select>
+              <small class="text-muted d-block mt-1">
+                Most homes over 15 years old have settled below R-19 due to compression and foot traffic.
+              </small>
+            </div>
+
+            <!-- Target Upgrade Level -->
+            <div class="mb-4">
+              <label class="form-label" for="calcUpgradeLevel">Target Upgrade Scope</label>
+              <select class="form-select" id="calcUpgradeLevel">
+                <option value="level1">Level 1: Attic Blown-In Upgrade (R-49 Code Standard)</option>
+                <option value="level2" selected>Level 2: Attic R-60 + Precision Air Sealing (Comprehensive Envelope)</option>
+                <option value="level3">Level 3: Closed-Cell Spray Foam Armor + Complete Air Barrier</option>
+              </select>
+            </div>
+
+            <!-- Climate Zone -->
+            <div class="mb-4">
+              <label class="form-label" for="calcClimateZone">Climate Zone / Region</label>
+              <select class="form-select" id="calcClimateZone">
+                <option value="cold">Cold / Very Cold (Zones 5, 6, 7 — Heavy winter heating)</option>
+                <option value="mixed" selected>Mixed / Humid (Zones 3, 4 — Balanced winter and summer load)</option>
+                <option value="hot">Hot / Humid (Zones 1, 2 — Heavy summer cooling)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Output Results Panel -->
+          <div class="col-lg-5">
+            <div class="calc-result-panel h-100 d-flex flex-column justify-content-between">
+              <div>
+                <span class="badge bg-warning text-dark px-3 py-2 fw-bold text-uppercase mb-3">Projected Annual Savings</span>
+                <div class="calc-result-figure mb-2" id="calcAnnualSavings">$784</div>
+                <div class="text-white-50 small mb-4">
+                  Estimated reduction: <strong class="text-white" id="calcPercentSaved">25%</strong> of your total annual utility spend
+                </div>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-6">
+                    <div class="metric-card-mini">
+                      <div class="text-white-50 small">Monthly Savings</div>
+                      <div class="fw-bold fs-4 text-white" id="calcMonthlySavings">$65 / mo</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="metric-card-mini">
+                      <div class="text-white-50 small">New Annual Cost</div>
+                      <div class="fw-bold fs-4 text-white" id="calcNewAnnualBill">$2,416 / yr</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Cumulative 5 and 10 Year -->
+                <div class="card p-3 bg-black bg-opacity-25 border-0 text-white mb-4">
+                  <div class="fw-bold small mb-2 text-warning"><i class="bi bi-graph-up-arrow me-1"></i>Long-Term Cumulative Returns</div>
+                  <div class="d-flex justify-content-between mb-1 small">
+                    <span class="text-white-50">5-Year Cumulative Savings:</span>
+                    <strong class="text-white" id="calcFiveYearSavings">$4,162</strong>
+                  </div>
+                  <div class="d-flex justify-content-between small">
+                    <span class="text-white-50">10-Year Savings (w/ 3% energy inflation):</span>
+                    <strong class="text-white" id="calcTenYearSavings">$9,235</strong>
+                  </div>
+                </div>
+
+                <!-- Carbon Offset Equivalent -->
+                <div class="row g-2 mb-3">
+                  <div class="col-6">
+                    <div class="p-2 rounded bg-white bg-opacity-10 text-center small">
+                      <i class="bi bi-cloud-slash text-info"></i>
+                      <div class="text-white-50" style="font-size: 0.75rem;">CO2 Offset / Year</div>
+                      <div class="fw-bold text-white" id="calcCo2Reduction">1.2 Tons</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-2 rounded bg-white bg-opacity-10 text-center small">
+                      <i class="bi bi-tree text-success"></i>
+                      <div class="text-white-50" style="font-size: 0.75rem;">Tree Equivalence</div>
+                      <div class="fw-bold text-white" id="treesEquivalent">56 Trees</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button type="button" id="calcLockInBtn" class="btn btn-accent w-100 py-3 fw-bold shadow-sm">
+                  <i class="bi bi-lock-fill me-2"></i>Lock In Your Free On-Site Audit
+                </button>
+                <div id="calcLockInMessage" class="mt-3"></div>
+                <div class="text-white-50 text-center small mt-2" style="font-size: 0.75rem;">
+                  *Estimates are illustrative; actual savings depend upon HVAC efficiency & weather.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documented Assumptions & Methodology Section -->
+      <div class="card-tg p-4 p-md-5 mt-5 bg-surface border-tg">
+        <h4 class="h5 fw-bold mb-3"><i class="bi bi-journal-text text-primary me-2"></i>Calculation Methodology & Documented Assumptions</h4>
+        <div class="row g-4 text-muted small">
+          <div class="col-md-6">
+            <h6 class="fw-bold mb-2">1. Heating & Cooling Baseline Fraction</h6>
+            <p>
+              According to the U.S. Department of Energy (DOE) Residential Energy Consumption Survey (RECS), space heating and air conditioning comprise approximately 52% of total residential utility expenditures, with base electrical loads (refrigeration, lighting, electronics) making up the remaining 48%.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h6 class="fw-bold mb-2">2. Air Sealing Synergy Multiplier</h6>
+            <p>
+              Insulation alone resists conduction but does not stop convection. Incorporating whole-home air sealing (Level 2 & Level 3) yields higher total load reductions by preventing the stack effect from bypassing the thermal blanket.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h6 class="fw-bold mb-2">3. Long-Term Utility Escalation Model</h6>
+            <p>
+              Cumulative 5-year and 10-year projections factor in a modest 3.0% compound annual escalation in regional electric and natural gas tariff rates, reflecting long-term historical utility trends.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h6 class="fw-bold mb-2">4. Disclaimer & Guarantee Boundary</h6>
+            <p>
+              All calculated figures are provided strictly for educational modeling and estimating purposes. They are not guaranteed warranties of specific utility bill amounts, as individual household occupant behavior, thermostat setpoints, and seasonal degree-day anomalies vary.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHARED FOOTER ================= -->
+  <footer class="tg-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-inline-flex" href="index.html">
+            <div class="brand-icon-wrap">
+              <i class="bi bi-shield-shaded"></i>
+            </div>
+            <span>Therma<span class="brand-highlight">Guard</span></span>
+          </a>
+          <p class="text-muted small pe-lg-4">
+            ThermaGuard is a premier insulation installation and energy efficiency contractor. We engineer thermal barriers that reduce utility expenses, eliminate drafts, and improve building longevity.
+          </p>
+          <div class="social-links mt-4">
+            <a href="https://instagram.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow ThermaGuard on Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Connect with ThermaGuard on LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://x.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow ThermaGuard on X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Connect on Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Important Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right text-success small"></i>Home 1</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right text-success small"></i>Home 2</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right text-success small"></i>About Us</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right text-success small"></i>Pricing Packages</a></li>
+            <li><a href="calculator.html"><i class="bi bi-chevron-right text-success small"></i>Savings Calculator</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right text-success small"></i>Blog & Guides</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right text-success small"></i>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Core Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Core Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?service=attic"><i class="bi bi-chevron-right text-success small"></i>Attic Insulation</a></li>
+            <li><a href="service-details.html?service=spray-foam"><i class="bi bi-chevron-right text-success small"></i>Spray Foam (Open/Closed)</a></li>
+            <li><a href="service-details.html?service=wall-injection"><i class="bi bi-chevron-right text-success small"></i>Dense-Pack Wall Injection</a></li>
+            <li><a href="service-details.html?service=crawl-space"><i class="bi bi-chevron-right text-success small"></i>Crawl Space Encapsulation</a></li>
+            <li><a href="service-details.html?service=air-sealing"><i class="bi bi-chevron-right text-success small"></i>Precision Air Sealing</a></li>
+            <li><a href="service-details.html?service=energy-audit"><i class="bi bi-chevron-right text-success small"></i>Thermal Energy Audits</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Information</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>4820 Energy Way, Suite 300<br>Building Performance District, IL 60601</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>(800) 555-ENRG (3674)<br>Local: (312) 555-0192</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>assessments@thermaguard-insulation.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Mon–Fri: 7:30am–6:30pm<br>Sat: 8:00am–4:00pm</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="footer-copy text-center text-md-start">
+          &copy; 2026 ThermaGuard™ Insulation & Energy Efficiency Inc. All rights reserved.
+        </div>
+        <div class="footer-legal-links d-flex align-items-center justify-content-center justify-content-md-end gap-3">
+          <a href="privacy.html" class="footer-legal-link">Privacy Policy</a>
+          <span class="footer-legal-sep">•</span>
+          <a href="terms.html" class="footer-legal-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core Script -->
+  <script src="js/main.js"></script>
+  <!-- Calculator Engine -->
+  <script src="js/calculator.js"></script>
+</body>
+</html>

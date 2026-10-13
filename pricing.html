@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Packages & Pricing | ThermaGuard™ Insulation</title>
+  <meta name="description" content="Transparent insulation pricing packages, R-value tiers, cost variables, and federal IRA rebate deductions for residential and commercial retrofits.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b6e4f'/><path d='M50 20 L80 45 L70 45 L70 75 L30 75 L30 45 L20 45 Z' fill='%23ffffff'/><circle cx='50' cy='55' r='10' fill='%23f59e0b'/></svg>">
+
+  <!-- Google Fonts (Outfit & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons 1.11 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Core & RTL Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg tg-navbar sticky-top">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon-wrap">
+          <i class="bi bi-shield-shaded"></i>
+        </div>
+        <span>Therma<span class="brand-highlight">Guard</span></span>
+      </a>
+
+      <!-- Mobile Controls & Hamburger -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="control-btn theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button class="rtl-pill-btn rtl-toggle-btn" aria-label="Toggle layout direction">
+            <span class="dir-label">RTL</span>
+        </button>
+        <button class="navbar-toggler border-0 shadow-none px-2" type="button" data-bs-toggle="collapse" data-bs-target="#tgNavbarCollapse" aria-controls="tgNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="tgNavbarCollapse">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown: EXACTLY TWO ITEMS -->
+          <li class="nav-dropdown dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door me-2"></i>Home 1</a></li>
+              <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-building me-2"></i>Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calculator.html">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Action Controls & CTA -->
+        <div class="nav-actions">
+          <button class="control-btn theme-toggle-btn d-none d-lg-flex" aria-label="Toggle theme" title="Toggle dark/light mode">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="rtl-pill-btn rtl-toggle-btn d-none d-lg-inline-flex" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+            <span class="dir-label">RTL</span>
+          </button>
+          <a href="contact.html" class="btn btn-primary ms-lg-2">
+            <i class="bi bi-clipboard2-check me-1"></i>Get a Free Assessment
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <section class="tg-page-banner tg-banner-pricing">
+    <div class="container tg-page-banner-container">
+      <h1 class="tg-page-banner-title">Pricing</h1>
+      <nav aria-label="breadcrumb" class="tg-page-banner-breadcrumb-nav">
+        <ol class="tg-page-banner-breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="separator">/</li>
+          <li class="active" aria-current="page">Pricing</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+
+  <!-- ================= PRICING CARDS ================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <!-- Tier 1: Basic Attic Top-Up -->
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div><span class="badge bg-surface-alt border text-body mb-2">Starter Package</span></div>
+              <h3 class="h4 fw-bold mb-1">Attic Top-Up</h3>
+              <p class="pricing-desc text-muted small mb-4">Ideal for homes with existing clean insulation that just need code depth.</p>
+              
+              <div class="d-flex align-items-baseline mb-1">
+                <span class="price-figure">$1,850</span>
+                <span class="text-muted ms-2 small">/ avg home</span>
+              </div>
+              <small class="text-muted d-block mb-3">(Demo range: $1,450 – $2,250)</small>
+            </div>
+
+            <ul class="pricing-feature-list">
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Blown-in virgin fiberglass to <strong>R-49</strong></span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Attic access hatch weatherstripping</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Basic soffit ventilation clearance</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>R-Value depth certification markers</span></li>
+              <li><i class="bi bi-x-circle cross"></i> <span class="text-muted">Whole-attic top-plate air sealing</span></li>
+              <li><i class="bi bi-x-circle cross"></i> <span class="text-muted">Rim joist spray foam treatment</span></li>
+              <li><i class="bi bi-x-circle cross"></i> <span class="text-muted">Blower door depressurization test</span></li>
+            </ul>
+
+            <div class="mt-auto pt-3">
+              <a href="contact.html" class="btn btn-outline-primary w-100">
+                Choose Starter Tier
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 2: Whole Home Thermal Defense (FEATURED) -->
+        <div class="col-lg-4">
+          <div class="pricing-card featured">
+            <span class="pricing-ribbon">MOST POPULAR</span>
+            <div class="pricing-header">
+              <div><span class="badge bg-success text-white mb-2">Maximum Efficiency</span></div>
+              <h3 class="h4 fw-bold mb-1">Whole-Home Air & R-60</h3>
+              <p class="pricing-desc text-muted small mb-4">Complete air-barrier sealing + deep R-60 thermal blanket.</p>
+
+              <div class="d-flex align-items-baseline mb-1">
+                <span class="price-figure text-success">$3,650</span>
+                <span class="text-muted ms-2 small">/ avg home</span>
+              </div>
+              <small class="text-muted d-block mb-3">(Demo range: $3,100 – $4,600)</small>
+            </div>
+
+            <ul class="pricing-feature-list">
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Blown-in virgin fiberglass to <strong>R-60</strong></span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span><strong>Full top-plate expanding air sealing</strong></span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Can lights & plumbing chase foaming</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>High-durability Accu-Vent baffles</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Insulated zip-up attic stair tent</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span><strong>Infrared thermal camera verification</strong></span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span><strong>Qualifies for $1,200 IRA Tax Credit</strong></span></li>
+            </ul>
+
+            <div class="mt-auto pt-3">
+              <a href="contact.html" class="btn btn-primary w-100">
+                <i class="bi bi-check2-circle me-1"></i>Select High-Efficiency Tier
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tier 3: Closed-Cell Armor -->
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div><span class="badge bg-warning text-dark mb-2">Premium Envelope</span></div>
+              <h3 class="h4 fw-bold mb-1">Closed-Cell Spray Foam</h3>
+              <p class="pricing-desc text-muted small mb-4">Unvented conditioned roofline or whole-structure barrier.</p>
+
+              <div class="d-flex align-items-baseline mb-1">
+                <span class="price-figure">$6,800</span>
+                <span class="text-muted ms-2 small">/ avg home</span>
+              </div>
+              <small class="text-muted d-block mb-3">(Demo range: $5,500 – $8,500)</small>
+            </div>
+
+            <ul class="pricing-feature-list">
+              <li><i class="bi bi-check-circle-fill check"></i> <span>High-density 2.0 lb closed-cell polyurethane</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Class II impermeable vapor barrier</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Complete conditioned attic conversion</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Basement rim joist air sealing included</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Structural racking strength added</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Calibrated blower door before/after test</span></li>
+              <li><i class="bi bi-check-circle-fill check"></i> <span>Lifetime manufacturer material warranty</span></li>
+            </ul>
+
+            <div class="mt-auto pt-3">
+              <a href="contact.html" class="btn btn-outline-primary w-100">
+                Request Foam Consultation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COST FACTORS ================= -->
+  <section class="section-padding bg-surface-alt">
+    <div class="container">
+      <div class="row justify-content-center text-center section-title-wrap">
+        <div class="col-lg-8">
+          <span class="section-subtitle">Understanding Your Quote</span>
+          <h2 class="section-title">What Factors Influence Your Project Cost?</h2>
+          <p class="text-muted">
+            We provide fixed-price bids after inspecting your property so there are never surprises on install day.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card-tg text-center">
+            <div class="card-icon-bubble mx-auto">
+              <i class="bi bi-arrows-fullscreen"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Total Square Footage</h5>
+            <p class="text-muted small mb-0">Larger horizontal attic planes or multi-floor exterior wall heights increase raw material volume and machine run time.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card-tg text-center">
+            <div class="card-icon-bubble mx-auto">
+              <i class="bi bi-trash3-fill"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Old Insulation Removal</h5>
+            <p class="text-muted small mb-0">If older batts harbor animal contamination, mold, or water intrusion, safe HEPA vacuum extraction is required first.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card-tg text-center">
+            <div class="card-icon-bubble mx-auto">
+              <i class="bi bi-triangle-half"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Roof Pitch & Access</h5>
+            <p class="text-muted small mb-0">Low-pitch attics or complex hip-roof trusses require specialized safety rigging and technician maneuverability.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card-tg text-center">
+            <div class="card-icon-bubble mx-auto">
+              <i class="bi bi-wind"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Air Bypass Density</h5>
+            <p class="text-muted small mb-0">Homes with dozens of unsealed can lights, chimney chases, and open wall soffits require more labor-intensive foam sealing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRICING FAQS ================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center text-center section-title-wrap">
+        <div class="col-lg-8">
+          <span class="section-subtitle">Common Questions</span>
+          <h2 class="section-title">Pricing & Payment FAQs</h2>
+          <p class="text-muted">
+            Frequently asked questions about financing, tax credits, and payment methods.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="pricingFaqs">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="pFaq1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pCol1" aria-expanded="true">
+                  How does the $1,200 Federal IRA Tax Credit apply to my purchase?
+                </button>
+              </h2>
+              <div id="pCol1" class="accordion-collapse collapse show" data-bs-parent="#pricingFaqs">
+                <div class="accordion-body">
+                  Under Section 25C of the Internal Revenue Code, homeowners can claim 30% of the cost of qualifying insulation materials and air sealing products, up to a maximum annual credit of $1,200. Following installation, ThermaGuard issues an official manufacturer certification statement with line-item product costs for your CPA or tax software.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="pFaq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pCol2">
+                  Do you offer flexible financing options?
+                </button>
+              </h2>
+              <div id="pCol2" class="accordion-collapse collapse" data-bs-parent="#pricingFaqs">
+                <div class="accordion-body">
+                  Yes. We partner with leading energy efficiency lending partners to offer 0% APR financing for 12 months for qualified residential borrowers, as well as low-rate 3-to-7 year terms that allow your monthly energy savings to exceed your monthly loan installment.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="pFaq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pCol3">
+                  Are quotes guaranteed or can prices change on installation day?
+                </button>
+              </h2>
+              <div id="pCol3" class="accordion-collapse collapse" data-bs-parent="#pricingFaqs">
+                <div class="accordion-body">
+                  All formal written quotations provided by our BPI analysts are guaranteed for 30 days. We do not charge surprise surcharges, ladder fees, or post-job clean-up costs.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHARED FOOTER ================= -->
+  <footer class="tg-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-inline-flex" href="index.html">
+            <div class="brand-icon-wrap">
+              <i class="bi bi-shield-shaded"></i>
+            </div>
+            <span>Therma<span class="brand-highlight">Guard</span></span>
+          </a>
+          <p class="text-muted small pe-lg-4">
+            ThermaGuard is a premier insulation installation and energy efficiency contractor. We engineer thermal barriers that reduce utility expenses, eliminate drafts, and improve building longevity.
+          </p>
+          <div class="social-links mt-4">
+            <a href="https://instagram.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow ThermaGuard on Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Connect with ThermaGuard on LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://x.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow ThermaGuard on X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Connect on Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Important Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right text-success small"></i>Home 1</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right text-success small"></i>Home 2</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right text-success small"></i>About Us</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right text-success small"></i>Pricing Packages</a></li>
+            <li><a href="calculator.html"><i class="bi bi-chevron-right text-success small"></i>Savings Calculator</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right text-success small"></i>Blog & Guides</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right text-success small"></i>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Core Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Core Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?service=attic"><i class="bi bi-chevron-right text-success small"></i>Attic Insulation</a></li>
+            <li><a href="service-details.html?service=spray-foam"><i class="bi bi-chevron-right text-success small"></i>Spray Foam (Open/Closed)</a></li>
+            <li><a href="service-details.html?service=wall-injection"><i class="bi bi-chevron-right text-success small"></i>Dense-Pack Wall Injection</a></li>
+            <li><a href="service-details.html?service=crawl-space"><i class="bi bi-chevron-right text-success small"></i>Crawl Space Encapsulation</a></li>
+            <li><a href="service-details.html?service=air-sealing"><i class="bi bi-chevron-right text-success small"></i>Precision Air Sealing</a></li>
+            <li><a href="service-details.html?service=energy-audit"><i class="bi bi-chevron-right text-success small"></i>Thermal Energy Audits</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Information</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>4820 Energy Way, Suite 300<br>Building Performance District, IL 60601</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>(800) 555-ENRG (3674)<br>Local: (312) 555-0192</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>assessments@thermaguard-insulation.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Mon–Fri: 7:30am–6:30pm<br>Sat: 8:00am–4:00pm</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="footer-copy text-center text-md-start">
+          &copy; 2026 ThermaGuard™ Insulation & Energy Efficiency Inc. All rights reserved.
+        </div>
+        <div class="footer-legal-links d-flex align-items-center justify-content-center justify-content-md-end gap-3">
+          <a href="privacy.html" class="footer-legal-link">Privacy Policy</a>
+          <span class="footer-legal-sep">•</span>
+          <a href="terms.html" class="footer-legal-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

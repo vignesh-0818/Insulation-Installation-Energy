@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="maintBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b6e4f" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b6e4f"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" rx="24" fill="url(#maintBg)"/>
+
+  <!-- Building Thermal Envelope Blueprint Wireframe -->
+  <g opacity="0.25" stroke="#0b6e4f" stroke-width="2" fill="none">
+    <line x1="50" y1="100" x2="550" y2="100" stroke-dasharray="8,8"/>
+    <line x1="50" y1="200" x2="550" y2="200" stroke-dasharray="8,8"/>
+    <line x1="50" y1="300" x2="550" y2="300" stroke-dasharray="8,8"/>
+    <polyline points="150,340 300,180 450,340"/>
+  </g>
+
+  <!-- Large Precision Gear with Insulation Tools -->
+  <g transform="translate(300, 190)">
+    <!-- Rotating Gear Outline -->
+    <path d="M-60,-15 L-70,-15 L-75,-5 L-65,5 L-65,15 L-75,25 L-70,35 L-60,35 L-50,48 L-55,58 L-45,65 L-35,55 L-25,60 L-20,70 L-10,70 L0,75 L10,70 L20,70 L25,60 L35,55 L45,65 L55,58 L50,48 L60,35 L70,35 L75,25 L65,15 L65,5 L75,-5 L70,-15 L60,-15 L50,-28 L55,-38 L45,-45 L35,-35 L25,-40 L20,-50 L10,-50 L0,-55 L-10,-50 L-20,-50 L-25,-40 L-35,-35 L-45,-45 L-55,-38 L-50,-28 Z" fill="url(#gearGrad)" filter="drop-shadow(0 10px 20px rgba(11,110,79,0.3))"/>
+    
+    <!-- Central Shield -->
+    <circle cx="0" cy="10" r="36" fill="#ffffff"/>
+    <path d="M-14,0 L0,-16 L14,0 L14,14 Q0,26 0,26 Q-14,14 -14,14 Z" fill="#0b6e4f"/>
+    <circle cx="0" cy="6" r="4" fill="#f59e0b"/>
+  </g>
+
+  <!-- Wrench and Gauge Tool Accents -->
+  <g transform="translate(180, 240) rotate(-25)">
+    <rect x="-10" y="-45" width="20" height="90" rx="8" fill="#475569" opacity="0.9"/>
+    <circle cx="0" cy="-35" r="16" fill="#334155"/>
+    <circle cx="0" cy="-35" r="8" fill="#f8fafc"/>
+  </g>
+
+  <g transform="translate(420, 240) rotate(25)">
+    <rect x="-10" y="-45" width="20" height="90" rx="8" fill="#475569" opacity="0.9"/>
+    <circle cx="0" cy="-35" r="16" fill="#334155"/>
+    <circle cx="0" cy="-35" r="8" fill="#f8fafc"/>
+  </g>
+
+  <!-- Status Ribbon -->
+  <g transform="translate(210, 330)">
+    <rect width="180" height="34" rx="17" fill="#0f172a" opacity="0.85"/>
+    <circle cx="20" cy="17" r="5" fill="#10b981"/>
+    <text x="100" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="12" fill="#ffffff" text-anchor="middle">SCHEDULED TUNE-UP</text>
+  </g>
+</svg>

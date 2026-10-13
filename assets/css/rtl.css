@@ -1,0 +1,197 @@
+/* ===================================================================
+   ThermaGuard™ - RTL (Right-to-Left) Stylesheet
+   Full bidirectional layout support and typography handling
+   =================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  text-align: right;
+}
+
+/* Ensure proper bidirectional text handling for paragraphs, headings, list items, badges, labels */
+[dir="rtl"] p,
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] li,
+[dir="rtl"] span:not(.tel-number),
+[dir="rtl"] .badge,
+[dir="rtl"] label,
+[dir="rtl"] .card,
+[dir="rtl"] blockquote {
+  unicode-bidi: plaintext;
+}
+
+/* Float & Alignments */
+[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+[dir="rtl"] .me-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+[dir="rtl"] .ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Margin-end / margin-start mirroring */
+[dir="rtl"] .me-1 { margin-right: 0 !important; margin-left: 0.25rem !important; }
+[dir="rtl"] .me-2 { margin-right: 0 !important; margin-left: 0.5rem !important; }
+[dir="rtl"] .me-3 { margin-right: 0 !important; margin-left: 1rem !important; }
+[dir="rtl"] .me-4 { margin-right: 0 !important; margin-left: 1.5rem !important; }
+
+[dir="rtl"] .ms-1 { margin-left: 0 !important; margin-right: 0.25rem !important; }
+[dir="rtl"] .ms-2 { margin-left: 0 !important; margin-right: 0.5rem !important; }
+[dir="rtl"] .ms-3 { margin-left: 0 !important; margin-right: 1rem !important; }
+[dir="rtl"] .ms-4 { margin-left: 0 !important; margin-right: 1.5rem !important; }
+[dir="rtl"] .ms-lg-2 { margin-left: 0 !important; margin-right: 0.5rem !important; }
+
+[dir="rtl"] .dropdown-menu {
+  text-align: right;
+}
+
+/* Nav & Header */
+[dir="rtl"] .navbar-brand {
+  flex-direction: row;
+}
+
+[dir="rtl"] .dropdown-item {
+  text-align: right;
+}
+
+[dir="rtl"] .dropdown-item i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .footer-links a:hover {
+  transform: translateX(-4px);
+}
+
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 25px;
+}
+
+/* Floating stat cards on Hero */
+[dir="rtl"] .floating-stat-card.bottom-left {
+  left: auto;
+  right: 24px;
+}
+
+[dir="rtl"] .floating-stat-card.top-right {
+  right: auto;
+  left: 24px;
+}
+
+/* Pricing ribbon */
+[dir="rtl"] .pricing-ribbon {
+  right: auto;
+  left: -42px;
+  transform: rotate(-45deg);
+}
+
+/* Blog badge */
+[dir="rtl"] .blog-meta-badge {
+  left: auto;
+  right: 14px;
+}
+
+/* Form Icons & Accordion */
+[dir="rtl"] .accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .form-select {
+  background-position: left 0.75rem center;
+  text-align: right;
+}
+
+/* Form Controls and Placeholders Alignment */
+[dir="rtl"] .form-control {
+  text-align: right;
+}
+
+[dir="rtl"] .form-control::placeholder {
+  text-align: right;
+}
+
+/* Phone Number Inputs Alignment & Placeholder in RTL (fixes desktop and mobile) */
+[dir="rtl"] input[type="tel"],
+[dir="rtl"] input[type="tel"]::placeholder {
+  direction: ltr !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] input[type="tel"] {
+  unicode-bidi: plaintext;
+}
+
+/* Telephone links and numbers (preserves LTR phone format in RTL mode) */
+[dir="rtl"] a[href^="tel"],
+[dir="rtl"] .tel-number,
+[dir="rtl"] [dir="ltr"] {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-block;
+}
+
+/* Form required asterisk alignment */
+[dir="rtl"] .form-label .text-danger {
+  display: inline-block;
+  direction: ltr;
+}
+
+/* Arrows and directional icons mirroring in RTL */
+[dir="rtl"] .bi-arrow-right,
+[dir="rtl"] .bi-arrow-right-circle,
+[dir="rtl"] .bi-arrow-right-short,
+[dir="rtl"] .bi-chevron-right {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+[dir="rtl"] .bi-arrow-left,
+[dir="rtl"] .bi-chevron-left {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/* Footer bottom layout and legal links mirroring in RTL */
+[dir="rtl"] .footer-bottom {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-copy {
+  direction: ltr;
+  text-align: right !important;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
+
+[dir="rtl"] .footer-legal-links {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+[dir="rtl"] .legal-nav-list a i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+

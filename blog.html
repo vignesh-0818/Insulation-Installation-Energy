@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Science & Energy Efficiency Blog | ThermaGuard™</title>
+  <meta name="description" content="Expert insights on attic insulation, closed-cell spray foam, air sealing, IRA tax credits, and home energy conservation strategies.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b6e4f'/><path d='M50 20 L80 45 L70 45 L70 75 L30 75 L30 45 L20 45 Z' fill='%23ffffff'/><circle cx='50' cy='55' r='10' fill='%23f59e0b'/></svg>">
+
+  <!-- Google Fonts (Outfit & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons 1.11 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Core & RTL Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg tg-navbar sticky-top">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon-wrap">
+          <i class="bi bi-shield-shaded"></i>
+        </div>
+        <span>Therma<span class="brand-highlight">Guard</span></span>
+      </a>
+
+      <!-- Mobile Controls & Hamburger -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="control-btn theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button class="rtl-pill-btn rtl-toggle-btn" aria-label="Toggle layout direction">
+            <span class="dir-label">RTL</span>
+        </button>
+        <button class="navbar-toggler border-0 shadow-none px-2" type="button" data-bs-toggle="collapse" data-bs-target="#tgNavbarCollapse" aria-controls="tgNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="tgNavbarCollapse">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown: EXACTLY TWO ITEMS -->
+          <li class="nav-dropdown dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door me-2"></i>Home 1</a></li>
+              <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-building me-2"></i>Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calculator.html">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Action Controls & CTA -->
+        <div class="nav-actions">
+          <button class="control-btn theme-toggle-btn d-none d-lg-flex" aria-label="Toggle theme" title="Toggle dark/light mode">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="rtl-pill-btn rtl-toggle-btn d-none d-lg-inline-flex" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+            <span class="dir-label">RTL</span>
+          </button>
+          <a href="contact.html" class="btn btn-primary ms-lg-2">
+            <i class="bi bi-clipboard2-check me-1"></i>Get a Free Assessment
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <section class="tg-page-banner tg-banner-blog">
+    <div class="container tg-page-banner-container">
+      <h1 class="tg-page-banner-title">Our Blog</h1>
+      <nav aria-label="breadcrumb" class="tg-page-banner-breadcrumb-nav">
+        <ol class="tg-page-banner-breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="separator">/</li>
+          <li class="active" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+
+  <!-- ================= SEARCH & FILTER CONTROLS ================= -->
+  <section class="py-4 bg-surface-alt border-bottom border-tg">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <!-- Search Input -->
+        <div class="col-md-5">
+          <div class="input-group">
+            <span class="input-group-text bg-surface border-tg text-muted">
+              <i class="bi bi-search"></i>
+            </span>
+            <input type="text" class="form-control border-tg" id="blogSearchInput" placeholder="Search articles by title, topic, or keyword...">
+          </div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="col-md-7">
+          <div class="filter-pills justify-content-md-end mb-0">
+            <button class="filter-btn active" data-category="all">All Articles</button>
+            <button class="filter-btn" data-category="attic">Attic Insulation</button>
+            <button class="filter-btn" data-category="spray-foam">Spray Foam</button>
+            <button class="filter-btn" data-category="rebates">Rebates & Tax Credits</button>
+            <button class="filter-btn" data-category="air-sealing">Air Sealing</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BLOG ARTICLES LISTING ================= -->
+  <section class="section-padding pb-5">
+    <div class="container">
+      <!-- Active counter -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="text-muted small">
+          Showing <span id="blogArticleCount" class="fw-bold text-success">6 articles</span>
+        </div>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="row g-4" id="blogArticlesGrid">
+        <!-- Article 1 (Required) -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="attic" data-tags="attic r-value hvac savings stack effect fiberglass r-19 r-60">
+          <div class="blog-card">
+            <div class="blog-img-wrap">
+              <a href="blog-details.html?id=attic-r60" class="d-block w-100 h-100">
+                <img src="images/blog-attic-r19-to-r60.jpg" alt="How Upgrading from R-19 to R-60 Attic Insulation Slashes HVAC Bills by 30%">
+              </a>
+              <span class="badge bg-success blog-meta-badge">Attic Insulation</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i>Oct 8, 2026</span>
+                <span><i class="bi bi-clock me-1"></i>6 min read</span>
+              </div>
+              <h3 class="blog-title">
+                <a href="blog-details.html?id=attic-r60">How Upgrading from R-19 to R-60 Attic Insulation Slashes HVAC Bills by 30%</a>
+              </h3>
+              <p class="text-muted small blog-excerpt">
+                Why standard builder-grade fiberglass batts fall short in extreme seasons, and how proper loose-fill depth eliminates stack-effect thermal losses.
+              </p>
+              <div class="mt-auto pt-3 border-top border-tg d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-person-circle me-1"></i>Arthur Vance, PE</span>
+                <a href="blog-details.html?id=attic-r60" class="fw-bold small text-primary-custom">Read Article <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2 (Required) -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="attic" data-tags="ice dams roof snow gutters attic heat loss winter freezing refreeze">
+          <div class="blog-card">
+            <div class="blog-img-wrap">
+              <a href="blog-details.html?id=ice-dams" class="d-block w-100 h-100">
+                <img src="images/blog-roof-ice-dams.jpg" alt="The True Cause of Destructive Roof Ice Dams (And How to Fix Them Forever)">
+              </a>
+              <span class="badge bg-success blog-meta-badge">Attic Insulation</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i>Sep 28, 2026</span>
+                <span><i class="bi bi-clock me-1"></i>6 min read</span>
+              </div>
+              <h3 class="blog-title">
+                <a href="blog-details.html?id=ice-dams">The True Cause of Destructive Roof Ice Dams (And How to Fix Them Forever)</a>
+              </h3>
+              <p class="text-muted small blog-excerpt">
+                Why roof heating cables and roof rakes only treat symptoms. How keeping attic floors cold through proper R-value stops snow melt and refreeze cycles.
+              </p>
+              <div class="mt-auto pt-3 border-top border-tg d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-person-circle me-1"></i>Arthur Vance, PE</span>
+                <a href="blog-details.html?id=ice-dams" class="fw-bold small text-primary-custom">Read Article <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3 (Required) -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="air-sealing" data-tags="heat loss thermal imaging infrared camera energy audit winter drafts air sealing">
+          <div class="blog-card">
+            <div class="blog-img-wrap">
+              <a href="blog-details.html?id=heat-loss" class="d-block w-100 h-100">
+                <img src="images/blog-thermal-heat-loss.jpg" alt="See Heat Loss Before It Costs You Another Winter">
+              </a>
+              <span class="badge bg-danger blog-meta-badge">Thermal Audit</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i>Sep 18, 2026</span>
+                <span><i class="bi bi-clock me-1"></i>7 min read</span>
+              </div>
+              <h3 class="blog-title">
+                <a href="blog-details.html?id=heat-loss">See Heat Loss Before It Costs You Another Winter</a>
+              </h3>
+              <p class="text-muted small blog-excerpt">
+                Discover how infrared thermography and calibrated blower door diagnostics identify hidden energy leaks and thermal bypasses before freezing temperatures hit.
+              </p>
+              <div class="mt-auto pt-3 border-top border-tg d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-person-circle me-1"></i>Arthur Vance, PE</span>
+                <a href="blog-details.html?id=heat-loss" class="fw-bold small text-primary-custom">Read Article <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="spray-foam" data-tags="spray foam closed cell polyurethane roof moisture">
+          <div class="blog-card">
+            <div class="blog-img-wrap">
+              <a href="blog-details.html?id=spray-foam" class="d-block w-100 h-100">
+                <img src="images/blog-spray-foam.jpg" alt="Closed Cell Spray Foam">
+              </a>
+              <span class="badge bg-warning text-dark blog-meta-badge">Spray Foam</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i>Sep 10, 2026</span>
+                <span><i class="bi bi-clock me-1"></i>8 min read</span>
+              </div>
+              <h3 class="blog-title">
+                <a href="blog-details.html?id=spray-foam">Open-Cell vs. Closed-Cell Spray Foam: Which Is Right for Your Climate?</a>
+              </h3>
+              <p class="text-muted small blog-excerpt">
+                A technical breakdown comparing permeability, R-value per inch, acoustic dampening, and cost-effectiveness between 0.5 lb and 2.0 lb polyurethane.
+              </p>
+              <div class="mt-auto pt-3 border-top border-tg d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-person-circle me-1"></i>David Sterling</span>
+                <a href="blog-details.html?id=spray-foam" class="fw-bold small text-primary-custom">Read Article <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 5 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="rebates" data-tags="ira inflation reduction act tax credits section 25c rebates energy star">
+          <div class="blog-card">
+            <div class="blog-img-wrap">
+              <a href="blog-details.html?id=tax-credit" class="d-block w-100 h-100">
+                <img src="images/blog-ira-tax-credit-insulation.jpg" alt="Professional installing residential attic insulation for IRA 25C tax credit">
+              </a>
+              <span class="badge bg-primary blog-meta-badge">Tax Credits</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i>Aug 25, 2026</span>
+                <span><i class="bi bi-clock me-1"></i>5 min read</span>
+              </div>
+              <h3 class="blog-title">
+                <a href="blog-details.html?id=tax-credit">How to Claim the $1,200 Federal IRA 25C Insulation Tax Credit in 2026</a>
+              </h3>
+              <p class="text-muted small blog-excerpt">
+                Everything you need to know about qualifying materials, manufacturer product certifications, and IRS filing documentation for maximum tax deductions.
+              </p>
+              <div class="mt-auto pt-3 border-top border-tg d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-person-circle me-1"></i>Claire Campbell</span>
+                <a href="blog-details.html?id=tax-credit" class="fw-bold small text-primary-custom">Read Article <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div class="col-md-6 col-lg-4 blog-article-item" data-category="air-sealing" data-tags="crawlspace moisture humidity radon vapor barrier encapsulation">
+          <div class="blog-card">
+            <div class="blog-img-wrap">
+              <a href="blog-details.html?id=crawl-space" class="d-block w-100 h-100">
+                <img src="images/blog-crawl-space.jpg" alt="Crawl Space Moisture Control">
+              </a>
+              <span class="badge bg-secondary blog-meta-badge">Air Sealing</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span><i class="bi bi-calendar3 me-1"></i>Jul 30, 2026</span>
+                <span><i class="bi bi-clock me-1"></i>5 min read</span>
+              </div>
+              <h3 class="blog-title">
+                <a href="blog-details.html?id=crawl-space">The 5 Warning Signs Your Crawl Space Needs Immediate Encapsulation</a>
+              </h3>
+              <p class="text-muted small blog-excerpt">
+                Cold floors, musty odors, high indoor summer humidity, and cupping hardwood flooring are telltale signals of subterranean moisture migration.
+              </p>
+              <div class="mt-auto pt-3 border-top border-tg d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-person-circle me-1"></i>Elena Rodriguez</span>
+                <a href="blog-details.html?id=crawl-space" class="fw-bold small text-primary-custom">Read Article <i class="bi bi-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty Search State -->
+      <div id="blogEmptyState" class="text-center py-5 d-none">
+        <div class="brand-icon-wrap bg-surface-alt text-muted mx-auto mb-3" style="width: 64px; height: 64px; font-size: 2rem;">
+          <i class="bi bi-search"></i>
+        </div>
+        <h4 class="fw-bold">No Articles Found</h4>
+        <p class="text-muted">We couldn't find any articles matching your search criteria. Try a different keyword or reset filters.</p>
+        <button class="btn btn-primary btn-sm" onclick="document.getElementById('blogSearchInput').value=''; document.querySelector('.filter-btn[data-category=all]').click();">
+          Reset Filter & Search
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPACT CALL TO ACTION ================= -->
+  <section class="blog-cta-section" id="blogCtaSection">
+    <div class="container">
+      <div class="blog-cta-content text-center">
+        <h2 class="blog-cta-title">Ready to Make Your Home More Energy Efficient?</h2>
+        <p class="blog-cta-desc">
+          Discover how the right insulation solutions can help improve indoor comfort, reduce unwanted heat transfer, and support better energy efficiency throughout your home.
+        </p>
+        <a href="services.html" class="btn btn-primary blog-cta-btn" id="blogCtaServicesBtn">Explore Our Insulation Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHARED FOOTER ================= -->
+  <footer class="tg-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-inline-flex" href="index.html">
+            <div class="brand-icon-wrap">
+              <i class="bi bi-shield-shaded"></i>
+            </div>
+            <span>Therma<span class="brand-highlight">Guard</span></span>
+          </a>
+          <p class="text-muted small pe-lg-4">
+            ThermaGuard is a premier insulation installation and energy efficiency contractor. We engineer thermal barriers that reduce utility expenses, eliminate drafts, and improve building longevity.
+          </p>
+          <div class="social-links mt-4">
+            <a href="https://instagram.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow ThermaGuard on Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Connect with ThermaGuard on LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://x.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow ThermaGuard on X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Connect on Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Important Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right text-success small"></i>Home 1</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right text-success small"></i>Home 2</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right text-success small"></i>About Us</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right text-success small"></i>Pricing Packages</a></li>
+            <li><a href="calculator.html"><i class="bi bi-chevron-right text-success small"></i>Savings Calculator</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right text-success small"></i>Blog & Guides</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right text-success small"></i>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Core Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Core Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?service=attic"><i class="bi bi-chevron-right text-success small"></i>Attic Insulation</a></li>
+            <li><a href="service-details.html?service=spray-foam"><i class="bi bi-chevron-right text-success small"></i>Spray Foam (Open/Closed)</a></li>
+            <li><a href="service-details.html?service=wall-injection"><i class="bi bi-chevron-right text-success small"></i>Dense-Pack Wall Injection</a></li>
+            <li><a href="service-details.html?service=crawl-space"><i class="bi bi-chevron-right text-success small"></i>Crawl Space Encapsulation</a></li>
+            <li><a href="service-details.html?service=air-sealing"><i class="bi bi-chevron-right text-success small"></i>Precision Air Sealing</a></li>
+            <li><a href="service-details.html?service=energy-audit"><i class="bi bi-chevron-right text-success small"></i>Thermal Energy Audits</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Information</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>4820 Energy Way, Suite 300<br>Building Performance District, IL 60601</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>(800) 555-ENRG (3674)<br>Local: (312) 555-0192</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>assessments@thermaguard-insulation.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Mon–Fri: 7:30am–6:30pm<br>Sat: 8:00am–4:00pm</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="footer-copy text-center text-md-start">
+          &copy; 2026 ThermaGuard™ Insulation & Energy Efficiency Inc. All rights reserved.
+        </div>
+        <div class="footer-legal-links d-flex align-items-center justify-content-center justify-content-md-end gap-3">
+          <a href="privacy.html" class="footer-legal-link">Privacy Policy</a>
+          <span class="footer-legal-sep">•</span>
+          <a href="terms.html" class="footer-legal-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core Script -->
+  <script src="js/main.js"></script>
+  <!-- Blog Search & Filter Script -->
+  <script src="js/blog-search.js"></script>
+</body>
+</html>

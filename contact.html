@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Request Free Assessment | ThermaGuard™</title>
+  <meta name="description" content="Contact ThermaGuard for on-site thermal energy evaluations, insulation quotes, and commercial building performance bids.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b6e4f'/><path d='M50 20 L80 45 L70 45 L70 75 L30 75 L30 45 L20 45 Z' fill='%23ffffff'/><circle cx='50' cy='55' r='10' fill='%23f59e0b'/></svg>">
+
+  <!-- Google Fonts (Outfit & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons 1.11 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Core & RTL Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg tg-navbar sticky-top">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon-wrap">
+          <i class="bi bi-shield-shaded"></i>
+        </div>
+        <span>Therma<span class="brand-highlight">Guard</span></span>
+      </a>
+
+      <!-- Mobile Controls & Hamburger -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="control-btn theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button class="rtl-pill-btn rtl-toggle-btn" aria-label="Toggle layout direction">
+            <span class="dir-label">RTL</span>
+        </button>
+        <button class="navbar-toggler border-0 shadow-none px-2" type="button" data-bs-toggle="collapse" data-bs-target="#tgNavbarCollapse" aria-controls="tgNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="tgNavbarCollapse">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <!-- Home Dropdown: EXACTLY TWO ITEMS -->
+          <li class="nav-dropdown dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door me-2"></i>Home 1</a></li>
+              <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-building me-2"></i>Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calculator.html">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Action Controls & CTA -->
+        <div class="nav-actions">
+          <button class="control-btn theme-toggle-btn d-none d-lg-flex" aria-label="Toggle theme" title="Toggle dark/light mode">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <button class="rtl-pill-btn rtl-toggle-btn d-none d-lg-inline-flex" aria-label="Toggle layout direction" title="Toggle RTL/LTR">
+            <span class="dir-label">RTL</span>
+          </button>
+          <a href="contact.html" class="btn btn-primary ms-lg-2">
+            <i class="bi bi-clipboard2-check me-1"></i>Get a Free Assessment
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <section class="tg-page-banner tg-banner-contact">
+    <div class="container tg-page-banner-container">
+      <h1 class="tg-page-banner-title">Contact Us</h1>
+      <nav aria-label="breadcrumb" class="tg-page-banner-breadcrumb-nav">
+        <ol class="tg-page-banner-breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="separator">/</li>
+          <li class="active" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+
+  <!-- ================= CONTACT INFO CARDS ================= -->
+  <section class="py-5 bg-surface-alt border-bottom border-tg">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card-tg p-4 text-center">
+            <div class="card-icon-bubble mx-auto mb-3" style="width: 52px; height: 52px; font-size: 1.4rem;">
+              <i class="bi bi-telephone-inbound-fill"></i>
+            </div>
+            <h6 class="fw-bold mb-1">Call Our Office</h6>
+            <p class="text-muted small mb-2">Toll-Free & Dispatch</p>
+            <a href="tel:+18005553648" class="fw-bold text-primary-custom">(800) 555-3674</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card-tg p-4 text-center">
+            <div class="card-icon-bubble mx-auto mb-3" style="width: 52px; height: 52px; font-size: 1.4rem;">
+              <i class="bi bi-envelope-open-fill"></i>
+            </div>
+            <h6 class="fw-bold mb-1">Email Estimates</h6>
+            <p class="text-muted small mb-2">General inquiries & RFPs</p>
+            <a href="mailto:assessments@thermaguard-insulation.com" class="fw-bold text-primary-custom text-truncate d-block">assessments@thermaguard.com</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card-tg p-4 text-center">
+            <div class="card-icon-bubble mx-auto mb-3" style="width: 52px; height: 52px; font-size: 1.4rem;">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <h6 class="fw-bold mb-1">Headquarters</h6>
+            <p class="text-muted small mb-2">Facility & Training Center</p>
+            <span class="text-body small fw-semibold">4820 Energy Way, Suite 300</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card-tg p-4 text-center">
+            <div class="card-icon-bubble mx-auto mb-3" style="width: 52px; height: 52px; font-size: 1.4rem;">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <h6 class="fw-bold mb-1">Operating Hours</h6>
+            <p class="text-muted small mb-2">Audits & Field Crews</p>
+            <span class="text-body small fw-semibold">Mon–Sat: 7:30am – 6:30pm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MAIN ASSESSMENT REQUEST FORM & DETAILS ================= -->
+  <section class="section-padding" id="assessment-form">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Form Column -->
+        <div class="col-lg-7">
+          <div class="card-tg p-4 p-md-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <span class="section-subtitle">No Pressure • 100% Free</span>
+                <h3 class="h3 fw-bold mb-0">On-Site Energy Assessment Form</h3>
+              </div>
+              <span class="badge bg-success-subtle text-success border border-success-subtle p-2">Fast Response</span>
+            </div>
+            <p class="text-muted small mb-4">
+              Fill out your property information below. A building performance analyst will review your profile and confirm an appointment slot.
+            </p>
+
+            <form class="tg-assessment-form needs-validation" novalidate>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="contactFullName">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="contactFullName" placeholder="e.g. Michael Henderson" required>
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="contactPhone">Phone Number <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="contactPhone" placeholder="(555) 000-0000" inputmode="numeric" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                  <div class="invalid-feedback">A valid phone number is required.</div>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="contactEmail">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="name@domain.com" required>
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="contactZip">Property ZIP Code <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="contactZip" placeholder="e.g. 60601" inputmode="numeric" pattern="[0-9]*" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                  <div class="invalid-feedback">Please enter your ZIP code.</div>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="contactPropertyType">Property Type <span class="text-danger">*</span></label>
+                  <select class="form-select" id="contactPropertyType" required>
+                    <option value="" selected>Select Property Type</option>
+                    <option value="single-family">Single-Family Detached Home</option>
+                    <option value="townhome">Townhouse / Duplex</option>
+                    <option value="commercial">Commercial / Retail Facility</option>
+                    <option value="warehouse">Industrial / Warehouse / Pole Barn</option>
+                    <option value="new-construction">New Construction</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a property type.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label" for="contactService">Primary Service Needed <span class="text-danger">*</span></label>
+                  <select class="form-select" id="contactService" required>
+                    <option value="" selected>Select Required Service</option>
+                    <option value="attic">Attic Insulation & Top-Up (R-49/R-60)</option>
+                    <option value="spray-foam">Closed-Cell Spray Foam Barrier</option>
+                    <option value="air-sealing">Whole-Home Air Sealing & Blower Door</option>
+                    <option value="wall-injection">Dense-Pack Exterior Wall Injection</option>
+                    <option value="crawlspace">Crawl Space Encapsulation</option>
+                    <option value="energy-audit">Full Thermal Camera Energy Audit</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a service.</div>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="contactSqFt">Approx. Square Footage</label>
+                  <input type="number" class="form-control" id="contactSqFt" placeholder="e.g. 2400 sq ft">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="contactPrefMethod">Preferred Contact Method</label>
+                  <select class="form-select" id="contactPrefMethod">
+                    <option value="phone">Phone Call</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text / SMS</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label" for="contactNotes">Project Notes or Specific Discomfort Issues</label>
+                <textarea class="form-control" id="contactNotes" rows="4" placeholder="Tell us about hot/cold spots, high utility bills, drafty rooms, or age of home..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                <i class="bi bi-send-check me-2"></i>Submit Assessment Request
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sidebar / What to Expect & Service Map -->
+        <div class="col-lg-5">
+          <div class="card-tg mb-4">
+            <h4 class="h5 fw-bold mb-3"><i class="bi bi-shield-check text-success me-2"></i>What Happens Next?</h4>
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-start gap-3">
+                <div class="process-step-num m-0 flex-shrink-0" style="width: 32px; height: 32px; font-size: 0.85rem;">1</div>
+                <div>
+                  <h6 class="mb-1">Phone Pre-Screening</h6>
+                  <p class="text-muted small mb-0">Our coordinator calls within 24 hours to review your square footage and confirm your heating fuel type.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="process-step-num m-0 flex-shrink-0" style="width: 32px; height: 32px; font-size: 0.85rem;">2</div>
+                <div>
+                  <h6 class="mb-1">On-Site Thermal Evaluation</h6>
+                  <p class="text-muted small mb-0">A certified BPI analyst measures attic depths, inspects ventilation baffles, and scans temperature deltas with FLIR thermal imaging.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="process-step-num m-0 flex-shrink-0" style="width: 32px; height: 32px; font-size: 0.85rem;">3</div>
+                <div>
+                  <h6 class="mb-1">Written Proposal & Tax Credit Guide</h6>
+                  <p class="text-muted small mb-0">You receive a guaranteed price quotation with eligible utility rebate calculations and manufacturer spec sheets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Regional HQ & Dispatch Summary Card -->
+          <div class="card-tg p-4 shadow-sm" id="contactDispatchCard">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="fw-bold mb-0 text-body fs-6">
+                <i class="bi bi-geo-alt-fill text-success me-2"></i>Regional Dispatch & HQ
+              </h5>
+              <span class="badge bg-success-subtle text-success small">50-Mile Radius</span>
+            </div>
+            <p class="text-muted small mb-3">
+              ThermaGuard dispatches certified BPI energy assessment teams and installation crews across the Chicago metropolitan area and neighboring counties.
+            </p>
+            <div class="p-3 rounded bg-surface-alt border border-tg mb-3">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <div class="fw-semibold text-body small">ThermaGuard Operations Center</div>
+                  <div class="text-muted small">4820 Energy Way, Suite 300 • Chicago, IL 60601</div>
+                  <div class="text-muted small mt-1"><i class="bi bi-telephone text-success me-1"></i>(800) 555-3674</div>
+                </div>
+                <a href="https://maps.google.com/?q=4820+Energy+Way,+Chicago,+IL+60601" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary flex-shrink-0 ms-2" title="Open in Google Maps">
+                  <i class="bi bi-box-arrow-up-right me-1"></i>Directions
+                </a>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap gap-1 mb-3">
+              <span class="badge bg-surface border text-body small">Cook County</span>
+              <span class="badge bg-surface border text-body small">DuPage & Kane</span>
+              <span class="badge bg-surface border text-body small">Lake & Will</span>
+              <span class="badge bg-success-subtle text-success small ms-auto"><i class="bi bi-check-circle-fill me-1"></i>Same-Week Dispatch</span>
+            </div>
+            <a href="#service-coverage" class="btn btn-sm btn-outline-success w-100">
+              <i class="bi bi-map-fill me-2"></i>View Service Coverage Area Map
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICE COVERAGE AREA SECTION ================= -->
+  <section class="section-padding bg-surface border-top border-tg" id="service-coverage">
+    <div class="container text-center">
+      <div class="row justify-content-center section-title-wrap mb-4">
+        <div class="col-lg-8">
+          <span class="section-subtitle">Service Coverage Area</span>
+          <h2 class="section-title">Our Service Coverage</h2>
+          <p class="text-muted lead-sm mx-auto mb-0" style="max-width: 740px;">
+            On-site thermal evaluations, laser energy measurements, and professional installation services across the greater metropolitan area.
+          </p>
+        </div>
+      </div>
+
+      <!-- Prominent Rounded Map Frame -->
+      <div class="service-coverage-map-wrap">
+        <iframe 
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-88.55%2C41.40%2C-87.35%2C42.40&amp;layer=mapnik&amp;marker=41.8818%2C-87.6231" 
+          title="ThermaGuard Service Coverage Area Map"
+          class="w-100 h-100 border-0" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT FAQS ================= -->
+  <section class="section-padding bg-surface-alt border-top border-tg">
+    <div class="container">
+      <div class="row justify-content-center text-center section-title-wrap">
+        <div class="col-lg-8">
+          <span class="section-subtitle">Frequently Asked Questions</span>
+          <h2 class="section-title">Assessment & Consultation FAQs</h2>
+          <p class="text-muted">
+            Have questions before booking? Here are answers to common questions about our on-site evaluations, scheduling, and service options.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="contactFaqs">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="cFaq1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cCol1" aria-expanded="true">
+                  Is the on-site thermal energy assessment really 100% free?
+                </button>
+              </h2>
+              <div id="cCol1" class="accordion-collapse collapse show" data-bs-parent="#contactFaqs">
+                <div class="accordion-body">
+                  Yes, absolutely. Our initial on-site evaluation includes attic depth measurement, FLIR thermal imaging scans, and blower door diagnostic review with zero obligation or hidden consultation fees.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="cFaq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cCol2">
+                  How quickly will a ThermaGuard specialist contact me?
+                </button>
+              </h2>
+              <div id="cCol2" class="accordion-collapse collapse" data-bs-parent="#contactFaqs">
+                <div class="accordion-body">
+                  Our regional project coordinators review new requests continuously Monday through Saturday. You can expect a response via phone or email within 24 business hours to confirm your property specifications and schedule an on-site visit.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="cFaq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cCol3">
+                  What areas and building types do you service?
+                </button>
+              </h2>
+              <div id="cCol3" class="accordion-collapse collapse" data-bs-parent="#contactFaqs">
+                <div class="accordion-body">
+                  We service single-family homes, townhomes, multi-family complexes, and commercial/industrial facilities within a 50-mile radius of our Building Performance District headquarters.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="cFaq4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cCol4">
+                  Do you help homeowners claim the $1,200 Federal IRA 25C tax credit?
+                </button>
+              </h2>
+              <div id="cCol4" class="accordion-collapse collapse" data-bs-parent="#contactFaqs">
+                <div class="accordion-body">
+                  Yes. Following every qualifying installation, ThermaGuard provides itemized invoices and official manufacturer certification statements required for IRS Form 5695 documentation.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHARED FOOTER ================= -->
+  <footer class="tg-footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand mb-3 d-inline-flex" href="index.html">
+            <div class="brand-icon-wrap">
+              <i class="bi bi-shield-shaded"></i>
+            </div>
+            <span>Therma<span class="brand-highlight">Guard</span></span>
+          </a>
+          <p class="text-muted small pe-lg-4">
+            ThermaGuard is a premier insulation installation and energy efficiency contractor. We engineer thermal barriers that reduce utility expenses, eliminate drafts, and improve building longevity.
+          </p>
+          <div class="social-links mt-4">
+            <a href="https://instagram.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow ThermaGuard on Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Connect with ThermaGuard on LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://x.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow ThermaGuard on X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Connect on Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Important Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right text-success small"></i>Home 1</a></li>
+            <li><a href="home-2.html"><i class="bi bi-chevron-right text-success small"></i>Home 2</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right text-success small"></i>About Us</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right text-success small"></i>Pricing Packages</a></li>
+            <li><a href="calculator.html"><i class="bi bi-chevron-right text-success small"></i>Savings Calculator</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right text-success small"></i>Blog & Guides</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right text-success small"></i>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Core Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Core Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?service=attic"><i class="bi bi-chevron-right text-success small"></i>Attic Insulation</a></li>
+            <li><a href="service-details.html?service=spray-foam"><i class="bi bi-chevron-right text-success small"></i>Spray Foam (Open/Closed)</a></li>
+            <li><a href="service-details.html?service=wall-injection"><i class="bi bi-chevron-right text-success small"></i>Dense-Pack Wall Injection</a></li>
+            <li><a href="service-details.html?service=crawl-space"><i class="bi bi-chevron-right text-success small"></i>Crawl Space Encapsulation</a></li>
+            <li><a href="service-details.html?service=air-sealing"><i class="bi bi-chevron-right text-success small"></i>Precision Air Sealing</a></li>
+            <li><a href="service-details.html?service=energy-audit"><i class="bi bi-chevron-right text-success small"></i>Thermal Energy Audits</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Information</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>4820 Energy Way, Suite 300<br>Building Performance District, IL 60601</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>(800) 555-ENRG (3674)<br>Local: (312) 555-0192</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>assessments@thermaguard-insulation.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Mon–Fri: 7:30am–6:30pm<br>Sat: 8:00am–4:00pm</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div class="footer-copy text-center text-md-start">
+          &copy; 2026 ThermaGuard™ Insulation & Energy Efficiency Inc. All rights reserved.
+        </div>
+        <div class="footer-legal-links d-flex align-items-center justify-content-center justify-content-md-end gap-3">
+          <a href="privacy.html" class="footer-legal-link">Privacy Policy</a>
+          <span class="footer-legal-sep">•</span>
+          <a href="terms.html" class="footer-legal-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>

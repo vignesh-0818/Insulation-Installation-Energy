@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b6e4f" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b6e4f"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="heatLeak" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="600" height="400" rx="24" fill="url(#skyGrad)"/>
+  
+  <!-- House Roof & Frame -->
+  <polygon points="300,70 480,180 440,180 440,320 160,320 160,180 120,180" fill="#1e293b" opacity="0.08"/>
+  <polyline points="100,190 300,60 500,190" fill="none" stroke="#0b6e4f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Chimney with heat escape -->
+  <rect x="390" y="80" width="40" height="70" fill="#cbd5e1" rx="4"/>
+  <path d="M400,70 Q410,40 430,30" fill="none" stroke="#ea580c" stroke-width="4" stroke-dasharray="6,6" opacity="0.8"/>
+
+  <!-- Attic Space Insulation Blanket -->
+  <rect x="180" y="195" width="240" height="28" rx="14" fill="#10b981" opacity="0.9"/>
+  <circle cx="210" cy="209" r="6" fill="#ffffff" opacity="0.8"/>
+  <circle cx="250" cy="209" r="6" fill="#ffffff" opacity="0.8"/>
+  <circle cx="290" cy="209" r="6" fill="#ffffff" opacity="0.8"/>
+  <circle cx="330" cy="209" r="6" fill="#ffffff" opacity="0.8"/>
+  <circle cx="370" cy="209" r="6" fill="#ffffff" opacity="0.8"/>
+  <circle cx="410" cy="209" r="6" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Wall Studs & Thermal Barrier -->
+  <rect x="180" y="235" width="240" height="85" fill="#f8fafc" stroke="#e2e8f0" stroke-width="3" rx="8"/>
+  
+  <!-- Center 404 Shield -->
+  <g transform="translate(250, 110)">
+    <path d="M50 0 L90 20 L90 70 Q50 110 50 110 Q10 70 10 20 Z" fill="url(#shieldGrad)" filter="drop-shadow(0 10px 15px rgba(11,110,79,0.3))"/>
+    <text x="50" y="58" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" fill="#ffffff" text-anchor="middle">404</text>
+    <text x="50" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10" fill="#fde68a" text-anchor="middle" letter-spacing="1">THERMAL LEAK</text>
+  </g>
+
+  <!-- Infrared Wave Ribbons -->
+  <path d="M80,310 Q140,290 200,310 T320,310 T440,310 T520,310" fill="none" stroke="#059669" stroke-width="3" stroke-dasharray="4,8" opacity="0.4"/>
+  <path d="M60,330 Q130,310 200,330 T340,330 T480,330 T540,330" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3,6" opacity="0.5"/>
+</svg>
