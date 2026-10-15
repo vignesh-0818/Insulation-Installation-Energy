@@ -195,3 +195,21 @@
   margin-right: 0;
 }
 
+/* Blog CTA Trust items bidirectional layout */
+[dir="rtl"] .blog-cta-trust-items {
+  direction: rtl;
+  justify-content: center;
+}
+
+[dir="rtl"] .blog-cta-trust-item {
+  direction: rtl;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+[dir="rtl"] .blog-cta-trust-item span {
+  unicode-bidi: isolate;
+}
+
+
