@@ -2602,3 +2602,14 @@ img {
   transform: translateY(-3px);
   color: #ffffff;
 }
+
+@media (max-width: 767.98px) {
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    bottom: 18px;
+    right: 18px;
+  }
+}
+
